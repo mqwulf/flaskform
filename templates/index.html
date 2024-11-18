@@ -1,1 +1,17 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <form action=" {{url_for('receive_data')}} " method="post">
+        <label>Name</label>
+        <input type="text" placeholder="name" name="username">
+        <label>Password</label>
+        <input placeholder="Password" type="password" name="password">
+        <button type="submit">Ok</button>
+    </form>
+</body>
+</html>
